@@ -1,0 +1,244 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+body {
+	background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
+	margin: 0;
+	font-family: "Open Sans Condensed", "Open Sans", Arial, Tahoma;
+}
+h2, h1 { text-align: center;}
+h1 { 
+	color: #ff9900;
+	font-family: "Open Sans Condensed", "Open Sans", Arial, Tahoma;
+}
+.titulo { 
+	color:  #4080bf;
+	text-align: center;
+}
+.titulo:p { 
+	color:  #ff9900;
+	font-size: 16px;
+}
+main { font: 14px "Open Sans Condensed", "Open Sans", Arial, Tahoma;}
+#logo {
+	font-family: 'Open Sans', sans-serif;
+	color: #4080bf;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 60px;
+	font-weight: 800;
+	letter-spacing: -3px;
+	line-height: 1;
+	text-shadow: #204060 2px 1px 0;
+	position: relative;
+	text-align: center;
+}
+#logo:after {
+	content:"SuperCoffee";
+	position: absolute;
+	left: 8px;
+	top: 16px;
+}
+#logo:after {
+
+  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+  background-size: 4px 4px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -5;
+  display: block;
+  text-shadow: none;
+}
+#logo1{
+	width: 100px;
+	display: inline-block;
+}
+#rodape {
+	text-align: center;
+	background-color: #cccccc;
+	font: 12px "Open Sans Condensed", "Open Sans", Arial, Tahoma;
+	padding: 10px;
+	bottom: 0;
+	margin-top: 10px;
+	width: 98.5%;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+a { text-decoration: none; }
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+/* Navigation Styles */
+
+nav { 
+	background: #4080bf;
+}
+
+nav ul {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 15px 40px;
+  transition: 0.3s linear;
+}
+
+nav ul li:hover { background: #ff9900; }
+
+nav ul li ul {
+  border-bottom: 5px solid #4080bf;
+  display: none;
+  position: absolute;
+  width: 250px;
+  text-align: left;
+  z-index:99;
+}
+
+nav ul li ul li {
+  border-top: 0px solid #4080bf;
+  display: block;
+}
+
+nav ul li ul li:first-child { border-top: none; }
+
+nav ul li ul li a {
+  background: #ff9900;
+  display: block;
+  padding: 10px 14px;
+}
+
+nav ul li ul li a:hover { background: #4080bf; }
+
+nav .fa.fa-angle-down { margin-left: 6px; }
+
+#banners {
+	margin: 0 auto;
+	width: 100%;
+}
+#sec_formulario {
+	margin: 0 auto;
+	padding: 15px 18px 15px 18px;
+	width: 60%;
+}
+#sec_galeria {
+	margin: 0 auto;
+	padding: 15px 18px 15px 18px;
+	width: 62%;
+	background-color: #f2f2f2;
+	border-top: 10px solid #cccccc;;
+	display: block;
+	text-align: center;
+}
+.divisa {
+	border-top: 10px solid #cccccc;;
+	display: block;
+}
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea, input[type=date], input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+	color: #ff9900;
+	font-weight: bold;
+}
+
+input[type=submit] {
+    background-color: #4080bf;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+	font-weight: bold;
+	margin-top: 8px;
+}
+
+input[type=submit]:hover {
+    background-color: #ff9900;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+#subirTopo {
+	text-decoration: none;
+	background:  #ff9900;
+	bottom: 30px;
+	right: 30px;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	padding: 15px;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: fixed;
+	border: 0;
+	outline: none; 
+	font-family: sans-serif;
+	opacity: 0.8;
+	z-index: 99;
+	display: none;
+	
+}
+
+#subirTopo:hover {
+	opacity:1;
+}
+#gallery-container{
+    max-width:800px;
+}
+.sampgallery-thumb{
+    width:200px;
+    height:200px;
+    background-size:100% 100%;
+}
